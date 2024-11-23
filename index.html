@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מחולל קישור ל-WhatsApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>מחולל קישור ל-WhatsApp</h2>
+    <label for="countryCode">בחר קידומת מדינה:</label>
+    <select id="countryCode">
+      <option value="+972">ישראל (+972)</option>
+      <option value="+1">ארה"ב (+1)</option>
+      <option value="+44">בריטניה (+44)</option>
+      <option value="+91">הודו (+91)</option>
+      <option value="+86">סין (+86)</option>
+      <option value="+81">יפן (+81)</option>
+      <option value="+49">גרמניה (+49)</option>
+      <option value="+33">צרפת (+33)</option>
+      <option value="+7">רוסיה (+7)</option>
+      <option value="+39">איטליה (+39)</option>
+      <option value="+55">ברזיל (+55)</option>
+      <option value="+61">אוסטרליה (+61)</option>
+      <option value="+34">ספרד (+34)</option>
+      <option value="+82">דרום קוריאה (+82)</option>
+      <option value="+234">ניגריה (+234)</option>
+      <option value="+351">פורטוגל (+351)</option>
+      <option value="+20">מצרים (+20)</option>
+    </select>
+    <input type="text" id="phoneNumber" placeholder="הכנס מספר טלפון">
+    <textarea id="customMessage" placeholder="הוסף הודעה מותאמת אישית (לא חובה)"></textarea>
+    <button id="createLink">צור והעתק קישור</button>
+    <button id="openChat">פתח את הצ'אט ב-WhatsApp</button>
+    <div id="linkHistory" class="history-section">
+      <h3>קישורים אחרונים</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
